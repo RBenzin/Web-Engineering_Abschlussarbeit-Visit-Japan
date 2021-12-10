@@ -22,3 +22,4 @@ Mein eigentliches Ziel war es ueber Angular eine Webseite zu erstellen. Leider f
 Mein Ziel war es dann "back-to-the-Roots" eine Webseite mit html, CSS (bzw. SASS) und JS zu erstellen. Als Herausforderung hab ich besonders auf das Design und Layout der Webseite auch in Bezug auf Responsiveness geachtet. Dies ist mir, meiner Einschätzung nach, auch gelungen:). Der Umgang mit weniger, dafuer aber größeren Komponenten (im Vergleich zu Angular) hat das Projekt fuer mich uebersichtlicher gemacht. Insgesamt hat es mir zum Schluss echt Spaß gemacht (besonders das "Stylen" der Webseite).
 
 # Flussdiagramm:
+![flowchart](https://user-images.githubusercontent.com/83594506/145649746-7c2ccbb6-0e36-4673-9dfc-e954132ccb4b.png)
