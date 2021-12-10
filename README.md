@@ -3,6 +3,10 @@
 # Wieso eine Website über Japan?
 
 # Features
+- Eigene Website (1 Punkt)
+- Eigenes Stylesheet (SASS und entsprechend kompiliertes CSS) (2 Punkte)
+- Wetterdienst (1 Punkt)
+- Html-Canvas zum Unterschreiben (2 Punkte)
 
 # Installation:
 
