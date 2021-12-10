@@ -12,7 +12,6 @@ Lieber ein paar Punkte mehr wie noetig :)
 # Installation:
 Vorraussetzungen:
 - Node.Js ist installiert
-- 
 Anleitung
 - Repositorie runterladen
 - Ueber eine Kommandozeile in den Ordner des Repositories gehen
