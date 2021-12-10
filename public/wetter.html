@@ -1,0 +1,108 @@
+<html>
+<!--Eigenes css-->
+<link rel="stylesheet" href="style.css">
+
+<!--Externe stylesheets fuer fonts-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+<title>Abschlussarbeit</title>
+</head>
+
+<body>
+<section class="sub-header-wetter">
+    <nav>
+        <a href="index.html"><img src="content/logo-visit-japan.svg"></a>
+        <div class="nav-links" id="nav-bar">  
+            <i class="fa fa-close" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">START</a></li>
+                <li><a href="wetter.html">WETTER</a></li>
+                <li><a href="finanzen.html">FINANZEN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav> 
+</section>
+    
+    
+<!---------- Wetterservice ----------->
+<section class="chapter">
+    <h1>Wetterservice</h1>
+    <p>Dies ist ein Wetterservice, der von openweathermap bereitgestellt wird. Es können Wetterdaten von Ländern 
+      auf der ganzen Welt angezeigt werden.
+    </p>
+    <form>
+      <div class="comment-form input"><input type="text" id="searchInput" ></div>
+      <input type="submit" value="Suchen"class="comment-box" id="submit-btn">
+    </form>
+    
+
+    <!--First Day-->
+    <div id="weather" style= "visibility: hidden">
+      <h2>5-Tage-Wettervorhersage</h2>
+      <h3 id="name1">Fehler</h3>
+      <div class="row">
+        <div class="weather-column-header">
+          <h3>Heute</h3>
+          <img id= "icon1" src="" alt="">
+          <p id="temp1"></p>
+          <p id="humidity1"></p>
+          <p id="wind1"></p>
+        </div>
+      </div>
+
+      <!-- 5-Day forecast  -->
+        <div class="row">
+            <div class="weather-column">
+              <div class="weather-column-body">
+                  <h3>Morgen</h3>
+                  <img id= "icon2" src="" alt="">
+                  <p id="temp2"></p>
+                  <p id="humidity2"></p>
+              </div>
+            </div>
+            <div class="weather-column">
+              <div class="weather-column-body">
+                  <h3>Übermorgen</h3>
+                  <img id = "icon3" src="" alt="">
+                  <p id ="temp3"></p>
+                  <p id ="humidity3"></p>
+              </div>
+            </div>
+            <div class="weather-column">
+              <div class="weather-column-body">
+                  <h3>In 3 Tagen</h3>
+                  <img id = "icon4" src="" alt="">
+                  <p id ="temp4"></p>
+                  <p id ="humidity4"></p>
+              </div>
+            </div>
+            <div class="weather-column">
+                <div class="weather-column-body">
+                    <h3>In 4 Tagen</h3>
+                    <img id= "icon5" src="" alt="">
+                    <p id ="temp5"></p>
+                    <p id ="humidity5"></p>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!--jQuery-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<!--JS-Skripts-->
+<script src="wetter.js"></script>
+<script src="navbar.js"></script>
+
+<!--Footer-->
+<section class="footer">
+<p>Abschlussarbeit Web-Engineering ITA2020<br>Matrikelnummer: 7133186</p>
+</section>    
+</body>
+</html>     
