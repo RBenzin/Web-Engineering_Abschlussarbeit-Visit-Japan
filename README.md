@@ -7,13 +7,13 @@
 - Eigenes Stylesheet (SASS und entsprechend kompiliertes CSS) (2 Punkte)
 - Wetterdienst (1 Punkt)
 - Html-Canvas zum Unterschreiben (2 Punkte)
-Lieber ein paar Punkte mehr wie noetig :)
+Lieber ein paar Punkte mehr wie nötig :)
 
 # Installation:
 - Node.Js muss installiert sein
 - Repository runterladen
-- Ueber eine Kommandozeile in den Ordner des Repositories gehen
-- Ueber "node mywebserver.js" den Server starten
-- Ueber http://localhost:6001/ kann die Website aufgerufen werden
+- Über eine Kommandozeile in den Ordner des Repositories gehen
+- Über "node mywebserver.js" den Server starten
+- Über http://localhost:6001/ kann die Website aufgerufen werden
 
 # Reflektion:
