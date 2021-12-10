@@ -8,7 +8,7 @@ Da ich in dem Studienkurs Intercultural Communications bereits eine Projektarbei
 - Eigenes Stylesheet (SASS und entsprechend kompiliertes CSS) (2 Punkte)
 - Wetterdienst (1 Punkt)
 - Html-Canvas zum Unterschreiben (2 Punkte)\
- Lieber ein paar Punkte mehr wie nötig :)
+=> Lieber ein paar Punkte mehr wie nötig :)
 
 # Installation:
 - Node.Js muss installiert sein
