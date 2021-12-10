@@ -1,0 +1,112 @@
+* {box-sizing: border-box;margin:0;padding:0;}
+/* html,body {height:300%;} */
+iframe {border:none;}
+.back {position:fixed; background-color:rgb(39, 147, 230); z-index:-1; height:100%; width:100%}
+/* Header Layout                                                               */
+header,footer {color: white;  background-color: black; padding:1em;}
+#headerfix {position:fixed; top:0; left:0; width:100%; z-index:10;}
+header span.headertext {padding-top:20px; padding-left: 20px;}
+footer {position:fixed; bottom:0; left:0;width:100%}
+nav  {background-color:darkgrey;}
+nav li {list-style-type: none; display: inline-block; padding:1.5em 0 1.5em 0; float: right;
+        border-left: 1px solid white;
+        text-align: center;
+        margin:0px}
+nav li:hover {background-color:white;}
+nav li a { text-decoration: none; padding: inherit; color: yellow;   font-weight: bold;}
+a:visited { color: blue; }
+a:hover, a:active, a:focus { color: darkred;  text-decoration: none;}
+/* Section layout                                                              */
+section {width:80%; position:relative; left:10%; padding:1em; border-bottom: 2px solid black;
+   margin-top:2em; margin-bottom: 2em;
+   background-color: #666; box-shadow: 10px 10px 5px black;}
+section > * {padding:0 2em 2em 2em ;font-family: sans-serif; font-size:1.3em;}
+/* Properties for  Fakultätbeschreibung */
+.headerpadding {position: relative;}
+.FakPicture > img {width:100%;}
+.FakDescription {font-size:1.2em;}
+.FakName {font-size:2em; color:white; background-color: rgba(0,0,0, 0.8); text-align: center;}
+[class^="Fak"] {padding: 1em;}
+
+/* Responsive Stuff
+------------------------------------------------------  */
+.row::after { clear: both; content: ""; display: block;}
+/* use media query to push the different styles
+/* For mobile phones: */
+[class*="col-"] {float: left;}
+/* For Handy  10 width to 450 */
+@media only screen and (min-width: 10px) {
+  /* We define the left floating and the smallest block, in general the width is 1% smaller
+  because we have a left-margin gap of 1% 100/12 % is 8.33%*/
+  .col-handy1 {width: 8.33%;}
+  .col-handy2 {width: 16.66%;}
+  .col-handy3 {width: 25%;}
+  .col-handy4 {width: 33.33%;}
+  .col-handy5 {width: 41.66%;}
+  .col-handy6 {width: 50%;}
+  .col-handy7 {width: 58.33%;}
+  .col-handy8 {width: 66.66%;}
+  .col-handy9 {width: 75%;}
+  .col-handy10 {width: 83.33%;}
+  .col-handy11 {width: 91.66%;}
+  .col-handy12 {width: 100%;}
+  span.headertext {font-size: 1.2em;}
+  section p {font-size: 0.8em;}
+  section iframe {padding:1em 0 1em 0;}
+  nav li {border-bottom: 1px solid white; border-left:none;}
+}
+    /* For small  tablets: 450-700  */
+@media only screen and (min-width: 450px) {
+/* now we add the grid sizes for all other potential boxes ..
+the selector means that elemts are selected which have both classes */
+.col-small1 {width: 8.33%;}
+.col-small2 {width: 16.66%;}
+.col-small3 {width: 25%;}
+.col-small4 {width: 33.33%;}
+.col-small5 {width: 41.66%;}
+.col-small6 {width: 50%;}
+.col-small7 {width: 58.33%;}
+.col-small8 {width: 66.66%;}
+.col-small9 {width: 75%;}
+.col-small10 {width: 83.33%;}
+.col-small11 {width: 91.66%;}
+.col-small12 {width: 100%;}
+span.headertext {font-size: 1.4em;}
+section p {font-size: 1.0em;}
+section iframe {padding:1em 0 1em 0}
+nav li {border-left: 1px solid white; border-bottom: none;}
+}
+@media only screen and (min-width: 700px) {
+  .col-med1 {width: 8.33%;}
+  .col-med2 {width: 16.66%;}
+  .col-med3 {width: 25%;}
+  .col-med4 {width: 33.33%;}
+  .col-med5 {width: 41.66%;}
+  .col-med6 {width: 50%;}
+  .col-med7 {width: 58.33%;}
+  .col-med8 {width: 66.66%;}
+  .col-med9 {width: 75%;}
+  .col-med10 {width: 83.33%;}
+  .col-med11 {width: 91.66%;}
+  .col-med12 {width: 100%;}
+  span.headertext {font-size: 1.5em;}
+  section p {font-size: 1.1em;}
+  section iframe {padding:1em 0 1em 0}
+  nav li {border-left: 1px solid white; border-bottom: none;}
+}
+@media only screen and (min-width: 1000px) {
+  .col-large1 {width: 8.33%;}
+  .col-large2 {width: 16.66%;}
+  .col-large3 {width: 25%;}
+  .col-large4 {width: 33.33%;}
+  .col-large5 {width: 41.66%;}
+  .col-large6 {width: 50%;}
+  .col-large7 {width: 58.33%;}
+  .col-large8 {width: 66.66%;}
+  .col-large9 {width: 75%;}
+  .col-large10 {width: 83.33%;}
+  .col-large11 {width: 91.66%;}
+  .col-large12 {width: 100%;}
+  span.headertext {font-size: 1.9em;}
+  nav li {border-left: 1px solid white; border-bottom: none;}
+}

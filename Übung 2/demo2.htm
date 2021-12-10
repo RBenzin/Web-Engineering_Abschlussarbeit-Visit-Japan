@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Closures</h2>
+
+<p>Counting with a local variable.</p>
+
+<button type="button">Die Menscheit ?</button>
+<button type="button">Zeig mal !</button>
+
+<p id="demo"></p>
+
+<script>
+var Menschheit = (function () {
+                 var counter = 0;
+                 var Namen = [];
+                 return {"Personen" : function (name) {
+                                              this.name = name;
+                                              this.greeting = function() {console.log('Hi! I\'m ' + this.name + '.')};
+                                              counter = counter +1;
+                                              Namen.push(this.name);
+                                                       },
+                        "Menschen": function () {
+                                             this.population = function() {return counter};
+                                             this.Namen = function() {return Namen};
+                                                }
+                       };
+ })();
+var  Person = Menschheit.Personen;
+var  Globus = Menschheit.Menschen;
+Person.prototype.auto = "VW";
+var Peter = new Person ("Peter");
+var Paul = new Person ("Paul");
+
+function Teacher(name,subject) {
+  Person.call(this,name);
+  this.subject = subject;
+};
+Teacher.prototype = Object.create(Person.prototype);
+Teacher.prototype.constructor = Teacher;   // because I Overwrote it before
+Teacher.prototype.income = 15.20;
+var Lina = new Teacher ("Lina","Java");
+var Lena = new Teacher ("Lena","Web");
+
+//
+function showMenschen(){
+  console.log("myFunction reached");
+  document.getElementById("demo").innerHTML = JSON.stringify(new Globus().Namen());
+}
+var message = document.getElementsByTagName('button')[0];
+message.addEventListener('click', function () {document.getElementById("demo").innerHTML = new Globus().population()});
+var message = document.getElementsByTagName('button')[1];
+message.addEventListener('click',showMenschen);
+</script>
+</body>
+</html>

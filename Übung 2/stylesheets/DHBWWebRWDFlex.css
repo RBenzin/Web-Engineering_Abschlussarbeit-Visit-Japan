@@ -1,0 +1,104 @@
+/*------------------------------------------------------------------------------ */
+/*                       Final CSS for the DHBW Exercises                        */
+/* ----------------------------------------------------------------------------- */
+/*  Basic Stuff                                                                  */
+/* ----------------------------------------------------------------------------- */
+* {box-sizing: border-box;margin:0;padding:0;}
+iframe {border:none;}
+button { background-color: grey; color: white;  text-transform:none;
+         cursor: pointer; font-size: 1em; padding:5px; margin:5px; border-radius: 5px}
+table {border-collapse: collapse;}
+table, th, td { border: 1px solid black; padding:5px;}
+/* ----------------------------------------------------------------------------- */
+/* give the (viewport) a blue background.. Is visible when not covered by other  */
+/* elements                                                                      */
+/* ----------------------------------------------------------------------------- */
+.back {position:fixed; background-color:rgb(39, 147, 230); z-index:-1; height:100%; width:100%}
+/* -----------------------------------------------------------------------------
+  Define the viewport (visible page) as CSS Grid
+  The Grid consists of the Header, the Navigation ,
+  the scrollable Part (youTube, Fakultäten) and the footer
+  In this case the Grid has four rows (height = auto) and 1 column with a
+  width of 100 %
+  The Header, the youTube and the Fakultäten become a flexbox
+  ----------------------------------------------------------------------------  */
+.pagegridcontainer {display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  .pagegridheader {grid-area: 1 / 1 / span 1 / span 1}
+  .pagegridnavigation {grid-area: 2 / 1 / span 1 / span 1}
+  .pagegridsrcol  {grid-area: 3 / 1 / span 1 / span 1}
+  .pagegridsfooter  {grid-area: 4 / 1 / span 1 / span 1}
+/* -----------------------------------------------------------------------------
+   Define flex box items  for the header, the navigation the youtube and the
+   Fakultäten
+   Note that the youTube and the related text are organized as column flow
+/* ----------------------------------------------------------------------------- */
+/* define the header and footer elements                                         */
+/* ----------------------------------------------------------------------------- */
+.flexboxheader,.flexboxnav,.flexFakultaet {display:flex; flex-flow: row wrap;}
+.flexboxheader {justify-content: space-evenly; align-items: center;}
+.flexboxnav {justify-content: flex-end; align-items: center;}
+.flexyouTube {flex-flow:column; max-width: 700px;}
+.flexFakultaet {align-items: center;background-color: #eeeeee}  /* JS>> Background and centering for picture and text
+/* -----------------------------------------------------------------------------
+   Header and Footer Elements
+-------------------------------------------------------------------------------- */
+header,footer {width:100%; color: white;  background-color: black;  font-size:1.3em;}
+header > *,footer {padding: 1em;}
+/* -----------------------------------------------------------------------------
+   Navigation Details
+-------------------------------------------------------------------------------- */
+nav  {background-color:darkgrey}
+nav div {padding:1.5em; text-align: center; margin:0px; border-color: white;border-width: 1px}
+nav div:hover {background-color:white;}
+nav div a { text-decoration: none;  color: yellow;   font-weight: bold;}
+a:visited { color: blue; }
+a:hover, a:active, a:focus { color: darkred;  text-decoration: none;}
+/* -----------------------------------------------------------------------------
+   youTube Section
+-------------------------------------------------------------------------------- */
+section {width:80%; position:relative; left:10%; padding:1em; border-bottom: 2px solid black;
+   margin-top:2em; margin-bottom: 2em;
+   background-color: #666; box-shadow: 10px 10px 5px black;}
+section > * {padding:0 2em 2em 2em ;font-family: sans-serif; }
+/* -----------------------------------------------------------------------------
+   Fakultät Elements
+-------------------------------------------------------------------------------- */
+.FakPicture > img {width:100%; height: auto;}
+.FakDescription {width:100%}
+.FakName, .NachrichtenHeader {font-size:1.5em; width:100%; color:white; background-color: rgba(0,0,0, 0.8); text-align: center;}
+[class^="Fak"] {padding: 1rem;}   /* JS changed to 1rem instad of 1em (just beauty)
+/* -----------------------------------------------------------------------------
+   Responsive modifications using the media query
+                                                                                 */
+/*  Devices between 5 and 399 px                                                 */
+@media only screen and (min-width: 5px) {
+  .navitem {width: 100%; padding:0.2em; border-style: solid solid none solid}
+  .lastnavitem {width: 100%; padding:0.2em; border-style: solid}  /* JS borders for bottom nav  */
+  .headerImage {width: 80%}
+  .FakPicture {width: 100%;}
+  .FakDescription {width:100%; font-size:1.2em;}
+  footer,header {font-size:0.8em}
+}
+/*  Devices between 400 and 714 px                                               */
+@media only screen and (min-width: 400px) {
+  .navitem {width: 33.33%;padding:1.0em; border-style: solid none solid solid}
+  .lastnavitem {width: 33.33%; padding:1.0em; border-style: solid}  /* JS borders for most right nav  */
+  .headerImage {width: 40%}
+  .FakPicture {width:40%; padding:0}
+  .FakDescription {width:60%; font-size:1.0em;}
+  footer,header {font-size:1.2em}
+  }
+  /*  Devices between 715 and anything higher px                                 */
+@media only screen and (min-width: 715px) {
+  .headerImage {width: 25%}
+  .navitem {width: 20%; padding:1.0em; border-style: solid none solid solid}
+  .lastnavitem {width: 20%; padding:1.0em; border-style: solid}  /* JS borders for most right nav  */
+  .FakPicture {width:30%; padding:0}
+  .FakDescription {width:70%;font-size:1.2em;}
+  footer,header {font-size:1.6em}
+  }
