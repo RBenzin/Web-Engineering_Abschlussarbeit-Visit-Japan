@@ -1,0 +1,43 @@
+<html>
+<!--Eigenes css-->
+<link rel="stylesheet" href="style.css">
+
+<!--Externe stylesheets fuer fonts-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Abschlussarbeit</title>
+</head>
+
+<body onload="init()">
+<section class="sub-header-sonstiges">
+    <nav>
+        <a href="index.html"><img src="content/logo-visit-japan.svg"></a>
+        <div class="nav-links" id="nav-bar">  
+            <i class="fa fa-close" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">START</a></li>
+                <li><a href="wetter.html">WETTER</a></li>
+                <li><a href="sonstiges.html">SONSTIGES</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+</section>
+
+<section class="chapter">
+    <h1>Unterschrift</h1>
+    <p>Hier kann eine Unterschrift gezeichnet werden</p>
+    <canvas id="can" class="signature-box"></canvas>
+    <img id="canvasimg" class="signature-box" style="display:none;">
+</section>
+<section class="sidebox">
+    <input type="button" class="comment-box" value="Speichern" id="btn"  onclick="save()">
+    <input type="button" class="comment-box" value="Löschen" id="clr" onclick="erase()">
+</section>
+    </section>
+</body>
+
+<script src="signature.js"e="text/javascript"></script>
+<script src="navbar.js"e="text/javascript"></script>

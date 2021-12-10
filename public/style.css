@@ -178,8 +178,8 @@ p{
     text-align: center;
     padding: 30px 0;
 }
-.sub-header-finanzen{
-    height: 25vh;
+.sub-header-sonstiges{
+    height: 10vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.74),rgba(4, 9, 30, 0.486)),url(content/finanzen-hintergrund.jpg);
     background-position: center;
@@ -265,6 +265,16 @@ p{
     outline: none;
     background: #f0f0f0;
     text-align: center;
+}
+.signature-box{
+    margin-top: 50px;
+    background-image: url(content/signature.svg);
+    background-size: 100% 100%;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
 @media (max-width:700px){
