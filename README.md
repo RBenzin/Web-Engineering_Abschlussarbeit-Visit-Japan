@@ -7,7 +7,7 @@ Da ich in dem Studienkurs Intercultural Communications bereits eine Projektarbei
 - Eigene Website (1 Punkt)
 - Eigenes Stylesheet (SASS und entsprechend kompiliertes CSS) (2 Punkte)
 - Wetterdienst (1 Punkt)
-- Html-Canvas zum Unterschreiben (2 Punkte)
+- Html-Canvas zum Unterschreiben (2 Punkte)\
  Lieber ein paar Punkte mehr wie nötig :)
 
 # Installation:
