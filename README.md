@@ -23,3 +23,12 @@ Mein Ziel war es dann "back-to-the-Roots" eine Webseite mit html, CSS (bzw. SASS
 
 # Flussdiagramm:
 ![flowchart](https://user-images.githubusercontent.com/83594506/145649746-7c2ccbb6-0e36-4673-9dfc-e954132ccb4b.png)
+
+# Bildquellen:
+[1] https://media.gettyimages.com/photos/shibuya-crossing-from-above-crowds-of-people-at-intersection-with-picture-id1165137507
+[2] https://www.reddit.com/r/wallpaper/comments/ap19px/miyajima_gate_3840x2160/
+[3] https://www.pinterest.de/pin/775604367064762802/
+[4] https://www.pinterest.de/pin/438960294934390652/
+[5] https://tasty.co/recipe/philadelphia-roll
+[6] https://foodiesterminal.com/instant-pot-chicken-teriyaki/
+[7] https://travel.gaijinpot.com/kiyomizu-dera-temple/
