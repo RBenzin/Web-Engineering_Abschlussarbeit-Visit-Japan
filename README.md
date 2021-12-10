@@ -10,10 +10,8 @@
 Lieber ein paar Punkte mehr wie noetig :)
 
 # Installation:
-Vorraussetzungen:
-- Node.Js ist installiert
-Anleitung
-- Repositorie runterladen
+- Node.Js muss installiert sein
+- Repository runterladen
 - Ueber eine Kommandozeile in den Ordner des Repositories gehen
 - Ueber "node mywebserver.js" den Server starten
 - Ueber http://localhost:6001/ kann die Website aufgerufen werden
