@@ -11,8 +11,8 @@ Da ich in dem Studienkurs Intercultural Communications bereits eine Projektarbei
 => Lieber ein paar Punkte mehr wie nötig :)
 
 # Installation:
-- Node.Js muss installiert sein
-- Repository runterladen
+- Node.Js installieren (falls nicht vorhanden: https://nodejs.org/en/download/)
+- Repository herunterladen und entpacken (z.B. mit Winrar)
 - Über eine Kommandozeile in den Root-Ordner des Repositories gehen
 - Über "node mywebserver.js" den Server starten
 - Über http://localhost:6001/ kann die Website aufgerufen werden
